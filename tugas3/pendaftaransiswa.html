@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi siswa</title>
+    <link rel="stylesheet" href="style/warna.css">
+</head>
+<body>
+    <div>
+    <h1>Pendaftaran Siswa</h1>
+        <label for="Nama Lengkap">Nama Lengkap</label>
+        <div>
+            <input type="text" name="nama" value="" size="30" placeholder="Masukkan nama anda">
+        </div>
+        <br>
+    </div>
+    <div>
+        <label for="Email Anda">Email Anda</label>
+        <div>
+            <input type="email" name="Email" value="" size="30" placeholder="Masukkan email anda" required>
+        </div>
+        <br>
+    </div>
+    <div>
+        <label for="password">Password Email</label>
+        <div>
+            <input id="password" type="password" name="password" value=""
+            autocomplete="off" placeholder="8-10 Karakter"
+            pattern="^(?=.{8,})(?=.*[a-z](?=.*[A-Z])(?=.*[\d])(?=.*[\w]).*$">
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="Jenis Kelamin">Jenis Kelamin</label>
+        <div>
+            <input type="radio" name="jk" value="L" >Laki-laki <br>
+            <input type="radio" name="jk" value="p" >Perempuan
+        </div>
+        <br>
+    </div>
+    <div>
+        <label for="Umur">Umur</label>
+        <div>
+        <input type="number"placeholder="Umur" min="10" max="100">Tahun
+        </div>
+        <br>
+    </div>
+    <div>
+        <label for="Tanggal Lahir">Tanggal Lahir</label>
+        <div>
+            <input type="date" name="Tanggallahir" id="Tanggallahir">
+        </div>
+        <br>
+        <div>
+            <label for="">Asal Tinggal</label>
+            <select>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Tangerang">Tangerang</option>
+                <option value="Depok">Depok</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Bogor">Bogor</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="">Alamat Rumah</label><br>
+        <textarea name="" id="" cols="50" rows="6"></textarea>
+        <br>
+    </div>
+    <div>
+        <input type="file">
+    </div>
+    <br>
+    <div>
+        <input type="Submit" value="Submit">
+    </div>
+    </div>
+</body>
+</html>
